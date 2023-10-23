@@ -83,7 +83,7 @@ private[router] final class RouterFactory(implicit
           .onPostRender((_, page) =>
             LogExceptionsCallback(async {
               val title = await(page.title)
-              dom.document.title = s"$title | Quizmaster"
+              dom.document.title = s"$title | Trivia Night!"
             })
           )
       }

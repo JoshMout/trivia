@@ -1,0 +1,180 @@
+# This is a demo quiz config.
+# This file contains all fields that you might want to update when creating your own quiz.
+
+title: Mario Trivia
+image: https://cdn.vox-cdn.com/thumbor/LM71zDVE5CnFaRM9jz-0hoaloxU=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24740692/super_mario_bros_wonder.jpeg
+author: winner gets a prize # Change this to your name
+#instructionsOnFirstSlide: 
+masterSecret: bubbles # Remove this line to allow anyone to access the master controls
+language: en # This is the default. The other supported languages can be found in application.conf
+
+usageStatistics:
+    # Set this to true if you're OK with sending anonymous usage statistics to the developer.
+    #
+    # The developer politely asks you to keep this so that they get a sense of how much this is
+    # used.
+    #
+    # Unless you explicitly allow it below, the data sent to the developer will never contain
+    # anything that identifies you personally. For example: It'll contain the version, the language,
+    # and the number of players.
+    sendAnonymousUsageDataAtEndOfQuiz: true
+
+    # Uncomment these lines if you're fine with sending extra data to the developer of Quizmaster.
+    #includeAuthor: true
+    #includeQuizTitle: true
+
+# Optional - Define custom defaults
+defaults:
+  maxTimeSeconds: 60
+  pointsToGain: 1
+  multipleAnswers_pointsToGainPerAnswer: 1
+  multipleQuestions_pointsToGainPerQuestion: 1
+  orderItems_pointsToGainInTotal: 1
+
+rounds:
+  - name: PICTURE ROUND
+    image: https://www.seekpng.com/png/detail/191-1913135_mario-jumping-super-mario-question-block.png
+    questions:
+      - question: Who is this?
+        image: https://mario.wiki.gallery/images/1/18/Genosmrpg.png
+        answer: Geno
+
+      - question: Who is this?
+        image: https://upload.wikimedia.org/wikipedia/en/f/f9/Birdo-MP9.png
+        answer: Birdo
+
+      - question: Who is this?
+        image: https://mario.wiki.gallery/images/5/5b/SMS_Toadsworth_Artwork.png
+        answer: Toadsworth
+        
+      - question: Who is this?
+        image: https://vignette.wikia.nocookie.net/nintendo/images/7/77/NSMBU_Nabbit.png/revision/latest?cb=20150604001204&path-prefix=en
+        answer: Nabbit
+
+      - question: Who is this?
+        image: https://th.bing.com/th/id/R.77a1ea58d923ab220e078f0c4f1a5cf6?rik=kS5EohMs2VbAoQ&riu=http%3a%2f%2fvignette3.wikia.nocookie.net%2ffantendo%2fimages%2f4%2f4d%2fProfessor_E._Gadd.png%2frevision%2flatest%3fcb%3d20110601184757&ehk=yCJOwLubnUxPcxUycgug1PMlYOF9spdNQqHi1czLM%2fI%3d&risl=&pid=ImgRaw&r=0
+        answer: Professor E. Gadd
+        
+      - question: Who is this?
+        image: https://static.wikia.nocookie.net/the-pgm5-wiki/images/0/02/Facd958e2ad6c4060416be358960f169.png/revision/latest?cb=20200309185126
+        answer: Cappy
+
+      - question: Who is this?
+        image: https://www.mariowiki.com/images/d/d7/SSBU_Lubba_Spirit.png
+        answer: Lubba 
+
+      - question: Who is this?
+        image: https://play.nintendo.com/images/Masthead_kameck.17345b1513ac044897cfc243542899dce541e8dc.9afde10b.png
+        answer: Kamek
+
+  - name: MUSIC ROUND
+    image: https://media.wired.com/photos/593326704cd5ce6f96c0c769/master/w_2560%2Cc_limit/Mario-Paint-Get-Lucky.jpg
+    questions:    
+      - question: What game is this song from?
+        answer: Mario Galaxy
+        answerDetail: Beach Bowl Galaxy
+        answerImage: https://mario.wiki.gallery/images/thumb/2/25/SMG_Beach_Bowl_Galaxy_Heavenly_Beach_Planet.png/1200px-SMG_Beach_Bowl_Galaxy_Heavenly_Beach_Planet.png
+        audio: https://vgmsite.com/soundtracks/super-mario-galaxy-complete-soundtrack-wii-wii-u-gamerip-2007/tuqdslarsj/64.%20Beach%20Bowl%20Galaxy.mp3
+      
+      - question: What game is this song from?
+        answer: Super Smash Bros Brawl
+        answerDetail: Ground Theme (Super Mario Bros.)
+        answerImage: https://th.bing.com/th/id/OIP.FfySmjLqrhYH4unCxk_uEwHaKb?pid=ImgDet&rs=1
+        audio: https://vgmsite.com/soundtracks/super-smash-bros-brawl-gamerip/pnprcftq/A01%20Ground%20Theme%20%28Super%20Mario%20Bros.%29.mp3
+        
+      - question: What game is this song from?
+        answer: Super Mario Odyssey
+        answerDetail: Tostarena Ruins
+        answerImage: https://th.bing.com/th/id/OIP.4t8HnAGslCkbc9BawNfi0QHaEK?pid=ImgDet&rs=1
+        audio: https://vgmsite.com/soundtracks/super-mario-odyssey-original-soundtrack/oabtcnbzjw/1-15.%20Tostarena%20Ruins.mp3
+
+      - question: What game is this song from?
+        answer: Super Mario 64
+        answerDetail: Dire, Dire Docks
+        answerImage: https://th.bing.com/th/id/OIP.hjujL0-0VBem_Ici8287igHaFL?pid=ImgDet&rs=1
+        audio: https://vgmsite.com/soundtracks/super-mario-64-n64/psnsvokwau/08.%20Dire%2C%20Dire%20Docks.mp3
+
+      - question: What game is this song from?
+        answer: Super Mario Sunshine
+        answerDetail: Secret Course
+        answerImage: https://i.ytimg.com/vi/3DJFu7OtQzw/maxresdefault.jpg
+        audio: https://vgmsite.com/soundtracks/super-mario-sunshine-game-rip/ompnaebeiv/21.%20Secret%20Course.mp3
+      
+      - question: What game is this song from?
+        answer: Super Mario 3D World
+        answerDetail: World 4
+        answerImage: https://cdn.staticneo.com/w/mario/thumb/5/5f/World_4_%28Super_Mario_3D_World%29.png/300px-World_4_%28Super_Mario_3D_World%29.png
+        audio: https://vgmsite.com/soundtracks/super-mario-3d-world-soundtrack/bwlamlre/1-20.%20World%204.mp3
+    
+      - question: What game is this song from?
+        answer: Mario Kart 8
+        answerDetail: Mute City
+        answerImage: https://th.bing.com/th/id/R.6d01b3e320447f072e0090eb42b0a65b?rik=5Rlg7W0UgcSdRQ&riu=http%3a%2f%2fpurenintendo.com%2fwp-content%2fuploads%2f2015%2f04%2fMk8-mute-city.jpg&ehk=A9I6%2ftPc4f%2f0Y0XEk72OZpc5NIcdk55lX3Lfj1hFxL4%3d&risl=&pid=ImgRaw&r=0
+        audio: https://vgmsite.com/soundtracks/mario-kart-8/ovtfjdyj/2-24.%20Mute%20City.mp3
+
+      - question: What game is this song from?
+        answer: Mario Party 2
+        answerDetail: Space Land
+        answerImage: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d462bf9-74df-4fc2-a16a-43b22e9cbf14/deunry0-28a32823-0db1-4df2-bff6-7c3056a4bb64.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkNDYyYmY5LTc0ZGYtNGZjMi1hMTZhLTQzYjIyZTljYmYxNFwvZGV1bnJ5MC0yOGEzMjgyMy0wZGIxLTRkZjItYmZmNi03YzMwNTZhNGJiNjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MjcLJ5iRdZ-jZSR2sJHNalj7ajLgJC7WbhzYZxLVCkg
+        audio: https://vgmsite.com/soundtracks/mario-party-2/ryuuxnut/14%20Space%20Land.mp3
+
+  - name: GENERAL MARIO KNOWLEDGE
+    image: https://mario.wiki.gallery/images/thumb/7/7f/Question_Block_-_Nintendo_JP_website.png/1200px-Question_Block_-_Nintendo_JP_website.png
+    questions: 
+      - question: Dolphin Shoals is part of which Mario Kart 8 cup?
+        choices: [Star Cup, Special Cup, Triforce Cup, Banana Cup]
+        answer: Star Cup
+        answerImage: https://i.ytimg.com/vi/ChXfk9AJ8nY/maxresdefault.jpg
+
+      - question: What is Mario's Final Smash in Smash Bros. Ultimate?
+        choices: [Power Star, Grand Star, Mario Finale, Mario Blitz]
+        answer: Mario Finale
+        answerImage: https://ssb.wiki.gallery/images/6/6c/Mario_SSBU_Skill_Preview_Final_Smash.png
+
+      - question: Which is the best selling Mario game?
+        choices: [Super Mario Odyssey, Mario Kart Wii, Mario Kart 8, Super Mario Bros.]
+        answer: Mario Kart 8
+        answerDetail: 63.92 million sales
+        answerImage: https://metro.co.uk/wp-content/uploads/2017/04/146463_hacp_aabp_charset01_01_r_ad-0_lr.jpg
+
+      - question: What is the name of Luigi's playable clone in Luigi's Mansion 3?
+        choices: [Mooigi, Wooigi, Booigi, Gooigi]
+        answer: Gooigi
+        answerImage: https://mario.wiki.gallery/images/thumb/3/30/LM3GooigiArt2.png/800px-LM3GooigiArt2.png
+
+      - question: How much does this Bowser amiibo retail for on Amazon (CAD)?
+        choices: [$18.99, $21.99, $24.99, $26.99.]
+        image: https://m.media-amazon.com/images/I/71hO3oFFsdL._AC_SX679_.jpg
+        answer: $21.99
+        answerDetail: $21.99
+        answerImage: https://m.media-amazon.com/images/I/91aOMzk23sL._AC_SY606_.jpg
+
+      - question: Which video game designer created Mario?
+        answer: Shigeru Miyamoto
+        answerImage: https://vignette.wikia.nocookie.net/mario/images/3/33/Shigeru_Miyamoto_2010.jpg/revision/latest?cb=20101230091519&path-prefix=de
+
+      - question: Which popular character first appeared in Mario Tennis (2000)?
+        answer: Waluigi
+        answerImage: https://japanesenintendo.files.wordpress.com/2019/05/waluigi-tennis-wear.jpg
+
+      - questionType: multipleAnswers
+        question: List all 7 Koopalings
+        questionDetail: (not Bowser Jr.)
+        answers:
+          - Iggy Koopa
+          - Larry Koopa
+          - Lemmy Koopa
+          - Ludwig von Koopa
+          - Morton Koopa Jr.
+          - Roy Koopa
+          - Wendy O. Koopa
+        answersHaveToBeInSameOrder: false
+        answerImage: https://mario.wiki.gallery/images/thumb/3/36/NSMBW_Koopalings_Group_Artwork.jpg/1200px-NSMBW_Koopalings_Group_Artwork.jpg
+        pointsToGainPerAnswer: 0.5
+        
+
+
+
+        
+
+        

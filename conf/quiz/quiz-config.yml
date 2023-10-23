@@ -1,11 +1,8 @@
-# This is a demo quiz config.
-# This file contains all fields that you might want to update when creating your own quiz.
-
-title: Demo quiz
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/OOUI_Talk_icon_-_Question_2.svg/1024px-OOUI_Talk_icon_-_Question_2.svg.png # optional
-author: Jens Nyman # Change this to your name
-instructionsOnFirstSlide: Please, don't look up the answers online
-masterSecret: quiz # Remove this line to allow anyone to access the master controls
+title: Disneyland Trivia!
+image:  https://www.discoverlosangeles.com/sites/default/files/business/disneyland-park/c_fit-w_1920-h_1440-crm-la-disneyland0-6a3322105056a36_6a3323af-5056-a36f-23e7498faf405903.jpg
+author: Josh # Change this to your name
+#instructionsOnFirstSlide: 
+masterSecret: bubbles # Remove this line to allow anyone to access the master controls
 language: en # This is the default. The other supported languages can be found in application.conf
 
 usageStatistics:
@@ -25,94 +22,153 @@ usageStatistics:
 
 # Optional - Define custom defaults
 defaults:
-  maxTimeSeconds: 120
+  maxTimeSeconds: 60
   pointsToGain: 1
   multipleAnswers_pointsToGainPerAnswer: 1
   multipleQuestions_pointsToGainPerQuestion: 1
-  orderItems_pointsToGainInTotal: 2
+  orderItems_pointsToGainInTotal: 1
 
 rounds:
-  - name: Geography
-    image: https://freesvg.org/img/globe-310324.png # optional
+  - name: General Knowledge
+    image: https://upload.wikimedia.org/wikipedia/commons/e/e6/Pixarpiersunset2019_%28cropped%29.jpg
     questions:
-      # Standard textual question
-      - question: Who was the country Colombia named after?
-        answer: Christoffer Columbus
+      - question: What year did Disneyland first open it's doors?
+        questionDetail: 2 points for exact answer.  1 point if within 3 years.
+        pointsToGain: 2
+        image: https://i.pinimg.com/1200x/2a/2b/b6/2a2bb6d85a0d4bd0d7c24e216aa4e3a7.jpg
+        answer: 1955
 
-      # Standard multiple-choice question
-      - question: What is the capital of Belgium?
-        choices: [Paris, London, Brussels, Berlin]
-        answer: Brussels
+      - question: When are crowds at Disneyland the smallest?
+        image: https://www.disneytouristblog.com/wp-content/uploads/2023/02/crowd-main-street-sleeping-beauty-castle-disneyland-california-068.jpg
+        choices: [Late January, Mid April, Mid July, Late August]
+        answer: Late January
         pointsToGain: 1
-        pointsToGainOnFirstAnswer: 2 # Double points for first right answer
 
-      # Multiple-choice question - only the first right answer gets points
-      - question: What is the capital of France?
-        choices: [Paris, London, Brussels, Berlin]
-        answer: Paris
-        image: https://raw.githubusercontent.com/nymanjens/quizmaster/master/conf/quiz/assets/geography/france.png
-        answerImage: geography/france-answer.png
-        # You can also use answerAudio: and answerVideo:, which are similar to audio: and video:.
-        answerDetail: |
-          Image released under Creative Commons by Destination2
-          (www.destination2.co.uk)
-        pointsToGain: 0 # This question won't give any points
-        maxTimeSeconds: 120
+      - question: What was Disneyland Paris originally named?
+        image: https://cdn.sortiraparis.com/images/80/87950/484853-visuels-disneyland-paris-chateau.jpg
+        answer: Euro Disney
+        pointsToGain: 1     
+        
+      - question: What is the best selling Disneyland merch item of all time?
+        image: https://assets-prd.ignimgs.com/2023/02/10/disneymerch-1676047982279.png
+        answer: Mickey Ears
+        pointsToGain: 1          
 
-      # Question to be answered verbally (with video) - only the first right answer gets points,
-      # players can stop the timer to attempt an answer
-      - question: What city does this video from 1935 show?
-        answer: Guatemala City
-        video: geography/about_bananas.mp4
-        onlyFirstGainsPoints: true # See who can answer this question first
-        showSingleAnswerButtonToTeams: true # Show a button to stop the timer. Answers can then be
-                                            # given verbally.
+       - question: Main Street is based on a small town in which US State?
+        image: https://insidethemagic.net/wp-content/uploads/2020/09/msm123234SMALL-1.jpg
+        choices: [Ohio, Missouri, California, West Virginia]
+        answer: Missouri    
 
-      # Special question type: Put items in the correct order
-      - questionType: orderItems
-        question: Order these cities from small to large
-        questionDetail: Population according to Google on July 2020
-        masterNotes: Mention that this is not a trick question
-        image: {src: geography/globe.png, size: small} 
-        orderedItemsThatWillBePresentedInAlphabeticalOrder:
-         - {item: Riga, answerDetail: ~600k}
-         - {item: Stockholm, answerDetail: ~1M}
-         - {item: Berlin, answerDetail: ~4M}
-         - {item: London, answerDetail: ~9M}
-        pointsToGain: 3
-
-
-  - name: Music round
-    image: https://upload.wikimedia.org/wikipedia/commons/f/f6/Music_1_-_The_Noun_Project.svg # optional
-    questions:
-      # Standard textual question with audio
-      - question: After which season is this track named?
-        questionDetail: (Royalty Free Music from Bensound)
-        answer: Summer
-        answerDetail: (By Bensound)
-        audio: https://www.bensound.com/bensound-music/bensound-summer.mp3
-
-      # Special question type: Provide multiple answers
       - questionType: multipleAnswers
-        question: List the band members of Metallica
-        questionDetail: (in 2021)
+        question: List all the different "lands" in Disneyland.
+        questionDetail: (Not including Main Street)
         answers:
-          - {answer: James Hetfield, answerDetail: Lead vocalist}
-          - Lars Ulrich
-          - Kirk Hammett
-          - Robert Trujillo
+          - Adventureland
+          - New Orleans Square
+          - Frontierland
+          - Critter Country
+          - Galaxy's Edge
+          - Fantasyland
+          - Toontown
+          - Tomorrowland
         answersHaveToBeInSameOrder: false
-        image: https://upload.wikimedia.org/wikipedia/commons/9/9e/Metallica_-_2003.jpg
-        pointsToGainPerAnswer: 1
+        image: https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/anaheimca/16921_imageb_c5e9346d-5056-a36a-07b05340b661147d.jpg
+        pointsToGainPerAnswer: 1           
 
-      # Special question type: Ask multiple questions
-      - questionType: multipleQuestions
-        questionTitle: Can you recognize the song from the lyrics?
-        questionDetail: |
-          With the lights out, it's less dangerous
-          Here we are now, entertain us
-        questions:
-          - {question: "What is the song title?", answer: "Smells Like Teen Spirit", answerDetail: 1991}
-          - {question: "Which artist?", answer: Nirvana}
-          - {question: "What year was the song released?", answer: 1991, pointsToGain: 2}
-        image: https://cdn.pixabay.com/photo/2016/01/12/17/20/sheet-music-1136234_960_720.png
+  - name: New Orleans Square
+    questions:
+      - question: What year did Pirates of the Caribbean open?
+        image: https://ca-times.brightspotcdn.com/dims4/default/1e843a5/2147483647/strip/true/crop/1778x1000+0+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F85%2F49%2F0cd31493544658708d833cc8afb0%2Fla-1499393184-7cm3dj7cb8-snap-image
+        choices: [1975, 1963, 1972, 1967]
+        answer: 1967
+        pointsToGain: 1
+
+      - question: What is the name of the vehicle that takes you throughout the Haunted Mansion?
+        image: https://cdn.vox-cdn.com/thumbor/UNTYDetg86-3bykWu_vNOmYQNdw=/0x0:4240x2832/1200x0/filters:focal(0x0:4240x2832):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/18956932/16400040129_2ff8c1b0b6_o.jpg
+        answer: Doom Buggies    
+
+      - question: What are the ghostly residents of the Haunted Mansion referred to by the Ghost Host?
+        image: https://static.wikia.nocookie.net/hauntedmasnion/images/3/37/HBG45457492LARGE-2.jpg
+        answer: Happy Haunts
+
+  - name: Fantasyland
+    questions:
+      - question: What was the original name for "It's a Small World" when Walt Disney conceived of it?
+        image: https://people.com/thmb/8qyuGFAmm9xUOs6Za9MfafRhjP0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/small-world-1600-97c0cb7dc4554375b2a7d2ea3022e68b.jpg
+        choices: [All over the world, Children of the world, A wonderful world, World of color]
+        answer: Children of the world
+
+      - question: True or False?  Alice in Wonderland was Disneylands first ever two-level ride-through attraction?
+        image: https://d23.com/app/uploads/2018/06/1180w-600h_061418_alice-in-wonderland-attraction-60th-anniversary.jpg
+        choices: [True, False]
+        answer: True      
+
+      - question: How many times has the draw bridge of Sleeping Beauty's Castle been raised in it's lifetime?
+        questionDetail: Yes, it is a real functional draw bridge
+        image: https://yesterland.com/images-myths/insanefacts_drawbridge2014ww.jpg
+        choices: [1, 2, 3, 4]
+        answer: 2
+
+      - question: What movie was Mr.Toads Wild Ride based off of?
+        image: https://d23.com/app/uploads/2013/04/Mr-Toads-Wild-Ride-1180x600-1180x600.jpg
+        answer: The adventures of Ichabod and Mr.Toad
+
+  - name: General Knowledge Part 2
+    questions:
+      - question: What land is the Astro Orbitor located?
+        image: https://www.tripsavvy.com/thmb/Ox42IoVZhu-WSwuVMHT5s1XtoOw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/P1161027-1000x1500-2-58f79c995f9b581d593ab1f6.jpg
+        answer: Tomorrowland
+        
+      - question: What land is Big Thunder Mountain Railroad located?
+        image: https://upload.wikimedia.org/wikipedia/commons/f/f5/Big_Thunder_Mountain_Entrance_Sign_at_Magic_Kingdom.jpg
+        answer: Frontierland
+
+      - question: Which was the first-ever attraction to use holograms??
+        image: https://disneydose.com/wp-content/uploads/Rise-of-the-Resistance-3.jpg
+        answer: Haunted Mansion
+
+      - question: On the day of opening, who bought the very first Disneyland ticket?
+        image: https://www.momrewritten.com/wp-content/uploads/2021/04/Disneyland-tickets-at-castle-LEAD-720x540.jpg.webp
+        choices: [Walt Disney, Roy Disney, Marc Davis, Harriet Burns]
+        answer: True
+
+  - name: Music Round
+    questions:
+      - question: What ride is this song from?
+        answer: Pirates of the Caribbean
+        audio: http://soundsofdisneyland.com/AudioFiles/Pirates%20of%20the%20Caribbean/18%20Medley.m4a
+
+      - question: What ride is this song from?
+        answer: Haunted Mansion
+        audio: http://soundsofdisneyland.com/AudioFiles/Haunted%20Mansion/17%20Medley.m4a
+
+      - question: What ride is this song from?
+        answer: Guardians of the Galaxy
+        audio: http://soundsofdisneyland.com/AudioFiles/Guardians%20of%20the%20Galaxy/01%20Summer%20of%20Heroes_%20Area%20Loop.m4a  
+
+      - question: What ride is this song from?
+        answer: Star Tours
+        audio: http://soundsofdisneyland.com/AudioFiles/Star%20Tours/04%20The%20Adventures%20Continue_%20Queue%20Music%20(2011).mp3 
+
+      - question: What ride is this song from?
+        answer: Alice in Wonderland
+        audio: http://soundsofdisneyland.com/AudioFiles/Alice%20in%20Wonderland/15%20March%20of%20the%20Cards%201.mp3
+
+      - question: What ride is this song from?
+        answer: Jungle Cruise
+        audio: http://soundsofdisneyland.com/AudioFiles/Jungle%20Cruise/02%20Area%20Background%20Music.mp3
+
+      - question: What ride is this song from?
+        answer: Mark Twain River Boat
+        audio: http://soundsofdisneyland.com/AudioFiles/Mark%20Twain%20River%20Boat/01%20Mark%20Twain%20River%20Boat_%20Queen%20of%20the%20River%20Theme.mp3
+
+      - question: What ride is this song from?
+        answer: Mark Twain River Boat
+        audio: http://soundsofdisneyland.com/AudioFiles/It's%20a%20Small%20World/10%20Float%20Through.mp3
+
+
+
+
+
+
+

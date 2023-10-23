@@ -66,7 +66,7 @@ final class Layout(implicit
       maybeScheduleBindShortcutsAndPreloadMedia(state)
 
       sbadminLayout(
-        title = "Trivia w/ Josh & Alyssa!",
+        title = "Trivia Night!",
         leftMenu = <.span(),
         pageContent = <.div(
           syncedTimerBar(showMasterData = router.currentPage == AppPages.Master),

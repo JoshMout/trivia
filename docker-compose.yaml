@@ -2,6 +2,7 @@ version: "3.7"
 services:
   app:
     build: .
+    container-name: "trivia"
     stdin_open: true
     tty: true
     ports: ["9000:9000"]
