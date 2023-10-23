@@ -54,7 +54,7 @@ rounds:
         answer: Mickey Ears
         pointsToGain: 1          
 
-       - question: Main Street is based on a small town in which US State?
+      - question: Main Street is based on a small town in which US State?
         image: https://insidethemagic.net/wp-content/uploads/2020/09/msm123234SMALL-1.jpg
         choices: [Ohio, Missouri, California, West Virginia]
         answer: Missouri    
@@ -123,14 +123,14 @@ rounds:
         image: https://upload.wikimedia.org/wikipedia/commons/f/f5/Big_Thunder_Mountain_Entrance_Sign_at_Magic_Kingdom.jpg
         answer: Frontierland
 
-      - question: Which was the first-ever attraction to use holograms??
+      - question: Which was the first-ever attraction to use holograms?
         image: https://disneydose.com/wp-content/uploads/Rise-of-the-Resistance-3.jpg
         answer: Haunted Mansion
 
       - question: On the day of opening, who bought the very first Disneyland ticket?
         image: https://www.momrewritten.com/wp-content/uploads/2021/04/Disneyland-tickets-at-castle-LEAD-720x540.jpg.webp
         choices: [Walt Disney, Roy Disney, Marc Davis, Harriet Burns]
-        answer: True
+        answer: Roy Disney
 
   - name: Music Round
     questions:
