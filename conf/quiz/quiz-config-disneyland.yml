@@ -1,6 +1,6 @@
 title: Disneyland Trivia!
 image:  https://www.discoverlosangeles.com/sites/default/files/business/disneyland-park/c_fit-w_1920-h_1440-crm-la-disneyland0-6a3322105056a36_6a3323af-5056-a36f-23e7498faf405903.jpg
-author: Josh # Change this to your name
+author: The happiest place on Earth # Change this to your name or a subtitle
 #instructionsOnFirstSlide: 
 masterSecret: bubbles # Remove this line to allow anyone to access the master controls
 language: en # This is the default. The other supported languages can be found in application.conf
@@ -30,7 +30,7 @@ defaults:
 
 rounds:
   - name: General Knowledge
-    image: https://upload.wikimedia.org/wikipedia/commons/e/e6/Pixarpiersunset2019_%28cropped%29.jpg
+    image: https://travelmamas.com/wp-content/uploads/2022/09/disneyland-halloween-mickey-minnie.jpeg
     questions:
       - question: What year did Disneyland first open it's doors?
         questionDetail: 2 points for exact answer.  1 point if within 3 years.
@@ -73,9 +73,11 @@ rounds:
           - Tomorrowland
         answersHaveToBeInSameOrder: false
         image: https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/anaheimca/16921_imageb_c5e9346d-5056-a36a-07b05340b661147d.jpg
-        pointsToGainPerAnswer: 1           
+        pointsToGainPerAnswer: 0.5   
+        maxTimeSeconds: 120        
 
   - name: New Orleans Square
+    image: https://d23.com/app/uploads/2016/07/1180-x-600-072116_disney-details-in-new-orleans-square-780x440.jpg
     questions:
       - question: What year did Pirates of the Caribbean open?
         image: https://ca-times.brightspotcdn.com/dims4/default/1e843a5/2147483647/strip/true/crop/1778x1000+0+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F85%2F49%2F0cd31493544658708d833cc8afb0%2Fla-1499393184-7cm3dj7cb8-snap-image
@@ -92,6 +94,7 @@ rounds:
         answer: Happy Haunts
 
   - name: Fantasyland
+    image: https://2.bp.blogspot.com/-R28yk2dcWqs/Ucf_7plPLnI/AAAAAAAAONU/DBa5yEtjeYY/w1200-h630-p-k-no-nu/DSC_6885-6886.JPG
     questions:
       - question: What was the original name for "It's a Small World" when Walt Disney conceived of it?
         image: https://people.com/thmb/8qyuGFAmm9xUOs6Za9MfafRhjP0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/small-world-1600-97c0cb7dc4554375b2a7d2ea3022e68b.jpg
@@ -114,13 +117,14 @@ rounds:
         answer: The adventures of Ichabod and Mr.Toad
 
   - name: General Knowledge Part 2
+    image: https://content.api.news/v3/images/bin/abb4726cf12be9dddaf19b905a9d5ba7
     questions:
       - question: What land is the Astro Orbitor located?
-        image: https://www.tripsavvy.com/thmb/Ox42IoVZhu-WSwuVMHT5s1XtoOw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/P1161027-1000x1500-2-58f79c995f9b581d593ab1f6.jpg
+        answerImage: https://www.tripsavvy.com/thmb/Ox42IoVZhu-WSwuVMHT5s1XtoOw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/P1161027-1000x1500-2-58f79c995f9b581d593ab1f6.jpg
         answer: Tomorrowland
         
       - question: What land is Big Thunder Mountain Railroad located?
-        image: https://upload.wikimedia.org/wikipedia/commons/f/f5/Big_Thunder_Mountain_Entrance_Sign_at_Magic_Kingdom.jpg
+        answerImage: https://upload.wikimedia.org/wikipedia/commons/f/f5/Big_Thunder_Mountain_Entrance_Sign_at_Magic_Kingdom.jpg
         answer: Frontierland
 
       - question: Which was the first-ever attraction to use holograms?
@@ -133,38 +137,47 @@ rounds:
         answer: Roy Disney
 
   - name: Music Round
+    image: https://dapsmagic.com/wp-content/uploads/2023/09/Dapper-Dans-Halloween-Time-Featured-Image.jpg
     questions:
       - question: What ride is this song from?
         answer: Pirates of the Caribbean
         audio: http://soundsofdisneyland.com/AudioFiles/Pirates%20of%20the%20Caribbean/18%20Medley.m4a
+        answerImage: https://media.wdwnt.com/2022/07/Pirates-of-the-Caribbean-Disneyland-stock-sign.jpg
 
       - question: What ride is this song from?
         answer: Haunted Mansion
         audio: http://soundsofdisneyland.com/AudioFiles/Haunted%20Mansion/17%20Medley.m4a
+        answerImage: https://cdn.sortiraparis.com/images/80/87950/779983-visuels-disneyland-paris-phantom-manor-maison-hantee.jpg
 
       - question: What ride is this song from?
         answer: Guardians of the Galaxy
         audio: http://soundsofdisneyland.com/AudioFiles/Guardians%20of%20the%20Galaxy/01%20Summer%20of%20Heroes_%20Area%20Loop.m4a  
+        answerImage: https://attractionsmagazine.com/wp-content/uploads/2019/09/Monsters-After-Dark-1.jpg
 
       - question: What ride is this song from?
         answer: Star Tours
         audio: http://soundsofdisneyland.com/AudioFiles/Star%20Tours/04%20The%20Adventures%20Continue_%20Queue%20Music%20(2011).mp3 
+        answerImage: https://www.parksavers.com/wp-content/uploads/2019/11/5D0C8362-D2EB-4EA1-954A-87087702DF22-scaled.jpeg
 
       - question: What ride is this song from?
         answer: Alice in Wonderland
         audio: http://soundsofdisneyland.com/AudioFiles/Alice%20in%20Wonderland/15%20March%20of%20the%20Cards%201.mp3
+        answerImage: https://www.tripsavvy.com/thmb/Brp-z3EeL3xLdokG62rWReTS7go=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/P1160992-1000x1500-58f788823df78ca1593fdd6e.jpg
 
       - question: What ride is this song from?
         answer: Jungle Cruise
         audio: http://soundsofdisneyland.com/AudioFiles/Jungle%20Cruise/02%20Area%20Background%20Music.mp3
+        answerImage: https://www.tripsavvy.com/thmb/pqIowjTUxWy0PfSwXfkBxupCTi8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/IMG_7001-1000x1500-58f7b8055f9b581d5973d636.jpg
 
       - question: What ride is this song from?
         answer: Mark Twain River Boat
         audio: http://soundsofdisneyland.com/AudioFiles/Mark%20Twain%20River%20Boat/01%20Mark%20Twain%20River%20Boat_%20Queen%20of%20the%20River%20Theme.mp3
+        answerImage: https://www.tripsavvy.com/thmb/P8uXOM6JLlx0ZNw4u_wi_W0BZLM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20170301_046-1000x1500-58b9f8ae5f9b58af5cead353.jpg
 
       - question: What ride is this song from?
-        answer: Mark Twain River Boat
+        answer: It's a small world
         audio: http://soundsofdisneyland.com/AudioFiles/It's%20a%20Small%20World/10%20Float%20Through.mp3
+        answerImage: https://www.ocregister.com/wp-content/uploads/2020/04/nws_ocr-l-trdisney-25-1.jpg?w=978
 
 
 
